@@ -1,0 +1,57 @@
+dear all，
+上周说更换JDK，同时需要更换MyEclipse。
+我已经把所有软件放到服务器了，大家自己搞一下。
+ 
+步骤：
+一．安装JDK
+
+1.软件下载地址：\\file.tp-link.net\云项目资料\Programs\JDK1.7u60
+
+2.安装JDK，可放置在任意目录下，并设置环境变量JAVA_HOME，PATH，CLASSPATH
+
+3.在cmd中输入Java –version ,出现下面信息（版本应该是build 1.7.0_60-b19）
+
+java version "1.7.0_60"
+
+Java(TM) SE Runtime Environment (build 1.7.0_60-b19)
+
+ 
+
+二．Maven
+
+1. 软件下载地址：\\file.tp-link.net\云项目资料\Programs\maven
+
+2. 解压软件，可放置在任意目录下,将其bin目录的路径加入环境变量PATH
+
+3.  在cmd中输入mvn –version出现下面信息
+
+Apache Maven 3.1.1
+
+ 
+
+三．MyEclipse2013
+
+1. 软件下载地址：\\file.tp-link.net\云项目资料\Programs\MyEclipse\myeclipse 2013
+
+2. 安装MyEclipse后，关闭软件，并按照软件下载地址里面破解方法进行操作
+
+3. 在MyEclipse菜单window->preferences里面
+
+Java的参数：Java->Compiler, Installed JREs和Execution Env三个选项选择1.7
+
+Maven的参数：MyEclipse->Maven4MyEclipse中修改Maven JDK
+
+              Maven4MyEclipse->Installations选择自己安装的Maven路径
+
+ 
+
+四．MyEclipse的SVN插件
+
+1. 软件下载地址：\\file.tp-link.net\云项目资料\Programs\MyEclipse SVN插件
+
+2. 将“MyEclipse SVN插件”里面的两个文件dropins和myPlugins拷贝到MyEclipse安装路径下面。并将dropins下面svn.link里面的路径修改成当前路径。（注意：拷贝dropins，要先检查MyEclips里面是否已经存在。如果存在，就直接修改）
+
+ 
+
+PS：由于版本问题，在MyEclipse中cloud的pom.xml会提示错误，可以直接忽略。
+
